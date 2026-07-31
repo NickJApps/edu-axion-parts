@@ -1,0 +1,21 @@
+{
+  "name": "edu-axion-parts",
+  "version": "0.1.0",
+  "description": "Education Axion Parts Project",
+  "keywords": [
+    "Axion",
+    "Parts"
+  ],
+  "license": "ISC",
+  "author": "NickJApps",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js" 
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}

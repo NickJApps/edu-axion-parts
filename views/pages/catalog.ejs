@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head include -->
+<%- include('../layouts/head'); %>
+
+<body>
+    <!--Header include -->
+    <%- include('../layouts/header'); %>
+
+    <main>
+
+        <!--Special offers section include -->
+        <% if (category === "brake") { %>
+            <%- include("../components/brake-offers-section") %>
+        <% } %>
+
+
+        <section class="section search-section">
+            <div class="search-container">
+                <div class="search-by-partnumber">
+                    <h3>Quick Search</h3>
+                    <div class="subscribe-input-container">
+                        <input type="text" placeholder="Write part number here...">
+                        <button class="button subscribe-button" type="button">
+                            <img src="../icons/find-product-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="search-by-mark">
+                    <h3>Vehicle Search</h3>
+                    <div class="subscribe-input-container search-select">
+                        <select name="mark" id="mark">
+                            <option value="DEFAULT">Mark</option>
+                            <option class="visibility" value="perro">Perro</option>
+                            <option class="visibility" value="gato">Gato</option>
+                            <option class="visibility" value="otro">Otro</option>
+                        </select>
+                        <select name="model" id="model">
+                            <option value="DEFAULT">Model</option>
+                        </select>
+                        <select name="engine" id="endine">
+                            <option value="DEFAULT">Engine</option>
+                        </select>
+                        <select name="year" id="year">
+                            <option value="DEFAULT">Year</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secction catalog">
+            <div class="products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../products/brake/brake-1.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <span>1234567890</span>
+                            <span>Front Break Disc Kit</span>
+                        </div>
+                        <div class="card-description">
+                            <div class="product-mark">
+                                <span>Mark</span>
+                                <span>Renault</span>
+                            </div>
+                            <div class="product-model">
+                                <span>Model</span>
+                                <span>Laguna 2</span>
+                            </div>
+                            <div class="product-year">
+                                <span>Year</span>
+                                <span>1994-2004</span>
+                            </div>
+                            <div class="product-type">
+                                <img src="../icons/front-icon.png" alt="">
+                            </div>
+                            <div class="product-price">
+                                <span>Price</span>
+                                <span>€ 100.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="button"><img src="../icons/favorite-icon.svg" alt=""></button>
+                        <button type="button" class="button"><img src="../icons/add-cart-icon.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../products/brake/brake-2.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <span>1234567890</span>
+                            <span>Front Break Disc Kit</span>
+                        </div>
+                        <div class="card-description">
+                            <div class="product-mark">
+                                <span>Mark</span>
+                                <span>Renault</span>
+                            </div>
+                            <div class="product-model">
+                                <span>Model</span>
+                                <span>Laguna 2</span>
+                            </div>
+                            <div class="product-year">
+                                <span>Year</span>
+                                <span>1994-2004</span>
+                            </div>
+                            <div class="product-type">
+                                <img src="../icons/rear-icon.svg" alt="">
+                            </div>
+                            <div class="product-price">
+                                <span>Price</span>
+                                <span>€ 100.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button type="button" class="button"><img src="../icons/favorite-icon.svg" alt=""></button>
+                        <button type="button" class="button"><img src="../icons/add-cart-icon.svg" alt=""></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer include-->
+    <%- include('../layouts/footer'); %>
+
+    <!--Scrips include-->
+    <%- include('../layouts/scripts'); %>
+</body>
+
+</html>

@@ -1,0 +1,1011 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #F6F6F6;
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #121313;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 900px;
+}
+
+.section {
+  margin: 0 auto;
+}
+
+/* Button */
+.button {
+  background-color: #3FC3D7;
+  border-radius: 28px 28px 28px 28px;
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 40px;
+  border: none;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #121313;
+}
+
+.slider-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-button:active img {
+  -webkit-filter: brightness(0) saturate(100%) invert(74%) sepia(72%) saturate(747%) hue-rotate(152deg) brightness(89%) contrast(87%);
+          filter: brightness(0) saturate(100%) invert(74%) sepia(72%) saturate(747%) hue-rotate(152deg) brightness(89%) contrast(87%);
+}
+
+/* Axion Parts Logo*/
+.main-logo {
+  margin-left: 60px;
+}
+.main-logo .axion,
+.main-logo .parts {
+  font-family: "Montserrat", serif;
+  font-size: 30px;
+}
+.main-logo .axion {
+  font-weight: 700;
+  color: #3FC3D7;
+}
+.main-logo .parts {
+  font-weight: 300;
+}
+
+/* Navigation */
+.logo-container {
+  padding-top: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0;
+}
+.logo-container .logo {
+  width: 76%;
+  max-width: 1179px;
+  margin-top: 20px;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.navbar {
+  padding-top: 15px;
+  max-width: 1540px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0;
+}
+.navbar .main-nav {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navbar .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar .register-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar .nav-item {
+  padding: 0 15px;
+}
+.navbar .nav-item a {
+  text-transform: uppercase;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+}
+.navbar .nav-item a:active {
+  color: #3FC3D7;
+}
+.navbar .nav-item a:hover {
+  text-decoration: underline;
+  text-decoration-color: #FFFFFF;
+}
+
+/* Section title */
+.section-title h2 {
+  font-family: "Syne", serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+.section-title p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Brake section */
+.brake {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.brake-section {
+  padding: 50px 0;
+}
+.brake-section .slick-initialized .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider {
+  max-width: 750px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+.slide .billboard-content {
+  width: 65%;
+}
+.slide .billboard-content .billboard-title {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slide .billboard-content .billboard-title span {
+  font-family: "Syne", serif;
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  line-height: 1.2;
+}
+.slide .billboard-content p {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 20;
+  margin: 20px 0;
+}
+.slide .billboard-content .slider-button {
+  text-align: center;
+}
+.slide .billboard-image {
+  width: 35%;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slick-dots li button {
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  margin: 0 3px;
+}
+.slick-dots .slick-active button {
+  background-color: #3FC3D7;
+  color: transparent;
+}
+
+/* Srevices*/
+.services-section {
+  padding: 50px 0;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #202121;
+}
+
+.services-item,
+.services-item * {
+  background: transparent;
+}
+
+.services div:nth-child(2) {
+  margin: 0 100px;
+}
+
+.services-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
+  padding: 50px 0;
+}
+.services-item h2 {
+  font-family: "Syne", serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+.services-item p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* Clitch */
+.clutch-section {
+  padding: 50px 0;
+}
+
+.clutch-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.clutch-container {
+  margin: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clutch-left-container .clutch-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clutch-right-container .clutch-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.clutch-left-container div:nth-child(2),
+.clutch-right-container div:nth-child(2) {
+  margin: 28px 0;
+}
+
+.clutch-item-content h2 {
+  font-family: "Syne", serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.clutch-item-content p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/*Engine fluid*/
+.fluid-section {
+  padding: 50px 0;
+}
+
+.fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fluid .fluid-title-container {
+  text-align: center;
+}
+.fluid .fluid-title-container h1 {
+  font-family: "Syne", serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+.fluid .fluid-title-container p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.fluid .slick-slider {
+  width: 400px;
+  margin: 20px 0;
+}
+.fluid .slick-initialized .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fluid .slick-initialized .slick-slide p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.engine-fluid-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin: 30px 0;
+  max-width: 1200px;
+}
+
+.show-catalog-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+/*Tools*/
+.tools-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+}
+
+.tools {
+  text-align: center;
+  max-width: 1200px;
+}
+
+.tools-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+
+.tool-image,
+.tool-about {
+  width: 50%;
+}
+
+.tools-title-container h2 {
+  font-family: "Syne", serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+.tools-title-container p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.tool-about-title h3 {
+  font-family: "Syne", serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+}
+.tool-about-title p {
+  text-align: left;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.tool-about-title .tool-price {
+  color: #3FC3D7;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.tool-description h4 {
+  text-align: left;
+  font-family: "Syne", serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+  color: #3FC3D7;
+}
+.tool-description p {
+  text-align: left;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.tool-button-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.tool-button-container::after {
+  content: "";
+  margin: 15px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+  display: block;
+}
+
+#tools-slider .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*subscribe*/
+.subscribe-section {
+  margin-top: 200px;
+}
+
+.subscribe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subscribe h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+.subscribe p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.subscribe-input-container {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 35px 35px 35px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subscribe-input-container input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  height: 100%;
+  padding: 10px;
+}
+
+/* Listed In */
+.listed-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+}
+
+.listed-container {
+  width: 1200px;
+}
+
+.listed-items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*Modal*/
+.modal {
+  display: none;
+  background-color: rgba(32, 33, 33, 0.6705882353);
+  border-radius: 5px;
+  pointer-events: auto;
+  position: fixed;
+  z-index: 0;
+}
+
+.modal-container {
+  padding: 20px 15px;
+}
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-header h2 {
+  font-family: "Syne", serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.modal-header p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.modal-content button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+}
+.form-group input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-transition: border-color 1s linear;
+  transition: border-color 1s linear;
+  padding-left: 40px;
+}
+.form-group input:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+.form-group input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.form-group input::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.form-group input:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.form-group input::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.form-group input::placeholder {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.input-user,
+.input-phone,
+.input-email,
+.input-password,
+.input-repeat {
+  background-repeat: no-repeat;
+  background-position: 5px -2px;
+}
+
+.input-user {
+  background-image: url(../icons/form-user.svg);
+}
+
+.input-phone {
+  background-image: url(../icons/form-phone.svg);
+}
+
+.input-email {
+  background-image: url(../icons/form-mail.svg);
+}
+
+.input-password {
+  background-image: url(../icons/form-password.svg);
+}
+
+.input-repeat {
+  background-image: url(../icons/form-repeat-password.svg);
+}
+
+.visible {
+  display: block;
+}
+
+/* search product section */
+.search-section {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.search-section .search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+.search-section .search-container .search-by-partnumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.search-section .search-container .search-by-partnumber h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.search-section .search-container .search-by-partnumber p {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 20px 0;
+}
+.search-section .search-container .search-by-partnumber button {
+  border-radius: 0 28px 28px 0;
+}
+.search-section .search-container .search-by-partnumber button img {
+  width: 35px;
+}
+.search-section .search-by-mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.search-section .search-by-mark h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.search-section .search-by-mark select {
+  background: transparent;
+  width: 25%;
+  height: 35px;
+  color: #fff;
+}
+.search-section .search-by-mark select option {
+  background: #000;
+}
+.search-section .search-by-mark .search-select select:first-child {
+  border-radius: 17px 0 0 17px;
+}
+.search-section .search-by-mark .search-select select:last-child {
+  border-radius: 0 17px 17px 0;
+}
+.search-section .search-by-mark .search-select select option {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* Product Page */
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.catalog .products {
+  width: 60%;
+  margin-top: 50px;
+}
+.catalog .products .product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+}
+.catalog .products .product-card .product-image {
+  width: 100px;
+  margin-right: 20px;
+}
+.catalog .products .product-card .card-body {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.catalog .products .product-card .card-body .card-title span {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #3FC3D7;
+}
+.catalog .products .product-card .card-body .card-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.catalog .products .product-card .card-body .card-description .product-mark,
+.catalog .products .product-card .card-body .card-description .product-model,
+.catalog .products .product-card .card-body .card-description .product-year,
+.catalog .products .product-card .card-body .card-description .product-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.catalog .products .product-card .card-body .card-description .product-mark span:first-child,
+.catalog .products .product-card .card-body .card-description .product-model span:first-child,
+.catalog .products .product-card .card-body .card-description .product-year span:first-child,
+.catalog .products .product-card .card-body .card-description .product-price span:first-child {
+  font-size: 16px;
+}
+.catalog .products .product-card .card-body .card-description .product-mark span:last-child,
+.catalog .products .product-card .card-body .card-description .product-model span:last-child,
+.catalog .products .product-card .card-body .card-description .product-year span:last-child,
+.catalog .products .product-card .card-body .card-description .product-price span:last-child {
+  font-size: 18px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  color: #3FC3D7;
+}
+.catalog .products .product-card .card-body .card-description .product-type {
+  width: 80px;
+}
+.catalog .products .product-card .card-buttons {
+  text-align: center;
+}
+.catalog .products .product-card .card-buttons button img {
+  width: 20px;
+}
+.catalog .products .product-card:hover {
+  cursor: pointer;
+}
+
+.brake-slider-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.brake-slider-wrapper .brake-slider {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.brake-slider-wrapper .brake-slider .brake-slider-item .slide-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.brake-slider-wrapper .brake-slider .brake-slider-item .slide-description span {
+  font-family: "Poppins", serif;
+}
+.brake-slider-wrapper .brake-slider .brake-slider-item .slide-description span:first-child {
+  color: #3FC3D7;
+  font-size: 18px;
+  font-weight: 500;
+}
+.brake-slider-wrapper .brake-slider .brake-slider-item .slide-description span:last-child {
+  font-size: 14px;
+  font-weight: 500;
+}
+.brake-slider-wrapper .brake-slider .slick-dots {
+  margin-top: 12px;
+}
+.brake-slider-wrapper .slick-list .slick-track .slick-slide {
+  width: 200px;
+}
