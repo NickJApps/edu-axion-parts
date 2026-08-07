@@ -654,7 +654,7 @@ a {
   border-radius: 5px;
   pointer-events: auto;
   position: fixed;
-  z-index: 0;
+  z-index: 1;
 }
 
 .modal-container {
