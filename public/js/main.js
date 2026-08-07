@@ -88,14 +88,3 @@ $('#tools-slider').slick({
 })
 
 
-// Brake slider
-
-$('#brake-slider').slick({
-    arrows: false, 
-    dots: true,  
-    autoplay: true,
-    autoplaySpeed: 10000,
-    infinite: true,
-    slidesToScroll: 3,
-    slidesToShow: 3
-}); 

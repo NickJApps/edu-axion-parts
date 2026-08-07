@@ -960,52 +960,92 @@ a {
   cursor: pointer;
 }
 
-.brake-slider-wrapper {
-  width: 100%;
+.hero-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
-.brake-slider-wrapper .brake-slider {
-  max-width: 600px;
+.hero-section .hero-section-content {
+  width: 70%;
+  height: 37vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.brake-slider-wrapper .brake-slider .brake-slider-item .slide-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.hero-section .hero-section-content .hero-section-title h1,
+.hero-section .hero-section-content h2 {
+  font-family: "Syne", serif;
 }
-.brake-slider-wrapper .brake-slider .brake-slider-item .slide-description span {
-  font-family: "Poppins", serif;
-}
-.brake-slider-wrapper .brake-slider .brake-slider-item .slide-description span:first-child {
+.hero-section .hero-section-content .hero-section-title h1 {
+  font-weight: 500;
+  font-size: 37px;
   color: #3FC3D7;
-  font-size: 18px;
-  font-weight: 500;
 }
-.brake-slider-wrapper .brake-slider .brake-slider-item .slide-description span:last-child {
-  font-size: 14px;
-  font-weight: 500;
+.hero-section .hero-section-content .hero-section-title h2 {
+  font-size: 400;
+  font-size: 23px;
 }
-.brake-slider-wrapper .brake-slider .slick-dots {
-  margin-top: 12px;
+.hero-section .hero-section-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imgs/hero-section-bg.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
 }
-.brake-slider-wrapper .slick-list .slick-track .slick-slide {
-  width: 200px;
+
+/*
+.brake-slider-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .brake-slider {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+
+        .brake-slider-item .slide-description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .brake-slider-item .slide-description span {
+            font-family: $poppinsFontFanily;
+        }
+
+        .brake-slider-item .slide-description span:first-child {
+            color: #3FC3D7;
+            font-size: 18px;
+            font-weight: $fontMedium;
+        }
+
+        .brake-slider-item .slide-description span:last-child {
+            font-size: 14px;
+            font-weight: $fontMedium;
+        }
+
+        .slick-dots {
+            margin-top: 12px;
+        }
+    }
+
+    .slick-list {
+        .slick-track {
+            .slick-slide {
+                width: 200px;
+            }
+        }
+    }
 }
+*/
