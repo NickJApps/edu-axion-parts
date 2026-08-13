@@ -784,11 +784,31 @@ a {
                 width: 100%;
                 justify-content: space-between;
 
-                .card-title span {
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    font-weight: $fontMedium;
-                    color: #3FC3D7;
+                .card-title {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    border-bottom: 1px solid #fff;
+
+                    span {
+                        font-size: 20px;
+                        font-weight: $fontMedium;
+                        text-transform: uppercase;
+                        color: #3FC3D7;
+                        letter-spacing: 2px;
+                    }
+
+                    img {
+                        height: 20px;
+                    }
+                }
+
+                .card-title img:nth-of-type(2) {
+                    margin: 0 5px 0 15px;
+                }
+
+                .card-title span:nth-of-type(2) {
+                    font-family: $syneFontFanily;
                 }
 
                 .card-description {
@@ -823,6 +843,8 @@ a {
 
                     .product-type {
                         width: 80px;
+                        display: flex;
+                        align-items: flex-end;
                     }
                 }
             }
@@ -838,6 +860,7 @@ a {
 
         .product-card:hover {
             cursor: pointer;
+            border: 2px solid #fff;
         }
     }
 }
