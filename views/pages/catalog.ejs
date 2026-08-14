@@ -55,8 +55,12 @@
         <section class="secction catalog">
             <div class="products">
                 
-                <%- include("../components/product-card") %>
+                <% products.forEach(product => { %>
 
+                    <%- include("../components/product-card", { product }) %>
+
+                <% }) %>
+                
             </div>
         </section>
 

@@ -1,10 +1,18 @@
+import { Service } from "../service/Service.js";
+
+const service = new Service();
+
 export const catalog = (req, res) => {
 
     const category = req.params.category;
+
     const config = catalogConfig[category];
+
+    const products = service.getProductsByCategory(category);
 
     res.render("pages/catalog", {
         category,
+        products,
         ...config
     });
 
