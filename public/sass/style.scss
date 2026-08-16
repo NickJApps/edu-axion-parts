@@ -756,7 +756,7 @@ a {
 }
 
 
-/* Product Page */
+/* Ctatalog Page */
 
 .catalog {
     display: flex;
@@ -770,10 +770,11 @@ a {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid;
             padding: 10px;
-            border-radius: 5px;
             margin: 10px 0 10px 0;
+            border: 2px solid transparent;
+            box-shadow: inset 0 0 0 1px $logoColor;
+            border-radius: 5px;
 
             .product-image {
                 width: 100px;
@@ -860,10 +861,22 @@ a {
 
         .product-card:hover {
             cursor: pointer;
-            border: 2px solid #fff;
+            border: 2px solid $logoColor;
         }
     }
 }
+
+.fluid-description {
+    width: 62%;
+
+    p {
+        font-size: 15px;
+        font-family: $syneFontFanily;
+        font-weight: $fontRegular;
+    }
+}
+
+/* Hero Section */
 
 .hero-section {
     display: flex;
