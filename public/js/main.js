@@ -45,7 +45,28 @@ $(document).ready(function () {
 
 });
 
+// Open compatibility window
 
+/*
+$(document).ready(function () {
+    $('#show-compatibility').on('click', function (event){
+        event.stopPropagation();
+        console.log('compatibility show');
+        $('.compatibility-popup-modal').removeClass('invisible');
+    });
+});
+*/
+
+$(document).on("click", "#show-compatibility", function (event) {
+
+    event.stopPropagation();
+
+    const popup = $(this).siblings("#show-compatibility");
+
+    $(".compatibility-popup-model").not(popup).removeClass("visible");
+
+    popup.toggleClass("visible");
+});
 
 
 //Brake Kits Slider

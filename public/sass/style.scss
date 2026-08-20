@@ -756,7 +756,7 @@ a {
 }
 
 
-/* Ctatalog Page */
+/* Ctatalog Page And Product Crad*/
 
 .catalog {
     display: flex;
@@ -879,7 +879,7 @@ a {
 }
 
 /* Fluid card */
-.card-title-fluid img:nth-of-type(3){
+.card-title-fluid img:nth-of-type(3) {
     margin-left: 12px;
 }
 
@@ -894,9 +894,57 @@ a {
 }
 
 /* Tools card */
-.card-title-tools img:nth-of-type(3){
+.card-title-tools img:nth-of-type(3) {
     margin: 0 5px 0 12px;
 }
+
+/* Compatibility Modal Window */
+
+.compatibility-popup-modal {
+    background-color: rgba(32, 33, 33, 0.9);
+    border-radius: 5px;
+    pointer-events: auto;
+    position: fixed;
+    z-index: 1;
+    right: 30%;
+    top: 20%;
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: .3rem;
+        outline: 0;
+        width: auto;
+        margin: 10px;
+
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #eceeef;
+            flex-direction: row;
+        }
+
+        .modal-body {
+            position: relative;
+            flex: 1 1 auto;
+            padding: 15px;
+            overflow: auto;
+        }
+
+    }
+
+
+}
+
+.invisible {
+    display: none;
+}
+
 
 /* Hero Section */
 

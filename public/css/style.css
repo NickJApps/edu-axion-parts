@@ -864,7 +864,7 @@ a {
   font-size: 13px;
 }
 
-/* Ctatalog Page */
+/* Ctatalog Page And Product Crad*/
 .catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,6 +1023,62 @@ a {
 /* Tools card */
 .card-title-tools img:nth-of-type(3) {
   margin: 0 5px 0 12px;
+}
+
+/* Compatibility Modal Window */
+.compatibility-popup-modal {
+  background-color: rgba(32, 33, 33, 0.9);
+  border-radius: 5px;
+  pointer-events: auto;
+  position: fixed;
+  z-index: 1;
+  right: 30%;
+  top: 20%;
+}
+.compatibility-popup-modal .modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  width: auto;
+  margin: 10px;
+}
+.compatibility-popup-modal .modal-content .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.compatibility-popup-modal .modal-content .modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+}
+
+.invisible {
+  display: none;
 }
 
 /* Hero Section */
