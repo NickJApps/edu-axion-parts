@@ -1032,8 +1032,6 @@ a {
   pointer-events: auto;
   position: fixed;
   z-index: 1;
-  right: 30%;
-  top: 20%;
 }
 .compatibility-popup-modal .modal-content {
   position: relative;

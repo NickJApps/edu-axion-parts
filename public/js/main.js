@@ -45,29 +45,66 @@ $(document).ready(function () {
 
 });
 
-// Open compatibility window
-
-/*
-$(document).ready(function () {
-    $('#show-compatibility').on('click', function (event){
-        event.stopPropagation();
-        console.log('compatibility show');
-        $('.compatibility-popup-modal').removeClass('invisible');
-    });
-});
-*/
+// Open compatibility window with click
 
 $(document).on("click", "#show-compatibility", function (event) {
 
     event.stopPropagation();
 
-    const popup = $(this).siblings("#show-compatibility");
+    const button = this;
+    const rect = button.getBoundingClientRect();
+    const modal = $(".compatibility-popup-modal");
 
-    $(".compatibility-popup-model").not(popup).removeClass("visible");
+    if (modal.hasClass("invisible")) {
 
-    popup.toggleClass("visible");
+        modal.css({
+            top: rect.bottom + 5 + "px",
+            left: rect.left + "px"
+        }).removeClass("invisible");
+
+    } else {
+
+        modal.addClass("invisible");
+    }
 });
 
+//Open compatibility window with mouseover
+$(document).on("mouseenter", "#show-compatibility", function () {
+
+    const button = this;
+    const modal = $(".compatibility-popup-modal");
+
+    // const offset = button.offset();
+    const rect = button.getBoundingClientRect();
+
+    modal.css({
+        top: rect.top + 5 + "px",
+        left: rect.left + "px"
+    }).removeClass("invisible");
+
+});
+
+
+$(document).on("mouseleave", "#show-compatibility, #compatibility-popup-modal", function () {
+    setTimeout(function () {
+        $(".compatibility-popup-modal").addClass("invisible");
+    }, 100);
+
+
+    /*
+    setTimeout(function () {
+
+        if (
+            !$("#show-compatibility:hover").length &&
+            !$(".compatibility-popup-modal:hover").length
+        ) {
+            $(".compatibility-popup-modal").addClass("invisible");
+        }
+
+    }, 10);
+    */
+
+});
 
 //Brake Kits Slider
 
